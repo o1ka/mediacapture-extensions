@@ -632,9 +632,10 @@ interface MediaStreamTrackAudioStats {
               of the [= voice isolation effort =] while audio was flowing at or
               since the last <dfn>voice isolation effort reset time</dfn>. If
               the [= voice isolation effort =] is <code>null</code>, they are
-              <code>null</code>. Otherwise, they are 0.0 if there were no such
-              values, and the user agent does not update them while no audio is
-              flowing.</p>
+              <code>null</code>. Otherwise, if no audio has flowed with a
+              non-<code>null</code> [= voice isolation effort =] at or since the
+              last [= voice isolation effort reset time =], they are 0.0. While
+              no audio is flowing, the user agent does not update them.</p>
             </li>
           </ul>
           <p>Let the {{MediaStreamTrackAudioStats}} have internal slots

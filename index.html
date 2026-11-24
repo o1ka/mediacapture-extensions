@@ -661,8 +661,8 @@ interface MediaStreamTrackAudioStats {
           and
           <dfn class=export data-dfn-for="MediaStreamTrackAudioStats">[[\MaximumVoiceIsolationEffort]]</dfn>,
           initialized to <code>null</code>.</p>
-          <p>The <dfn data-lt="expose audio frame counters steps">expose audio
-          frame counters steps</dfn> are the following:</p>
+          <p>The <dfn data-lt="expose audio stats steps">expose audio stats
+          steps</dfn> are the following:</p>
           <ul>
             <li>
               <p>Let <var>task</var> be the current [=task=].</p>
@@ -721,7 +721,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return
                 {{MediaStreamTrackAudioStats/[[DeliveredFrames]]}}.
               </p>
@@ -732,7 +732,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return
                 {{MediaStreamTrackAudioStats/[[DeliveredFramesDuration]]}}.
               </p>
@@ -743,7 +743,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return the sum of
                 {{MediaStreamTrackAudioStats/[[DeliveredFrames]]}} and
                 {{MediaStreamTrackAudioStats/[[DroppedFrames]]}}.
@@ -755,7 +755,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return the sum of
                 {{MediaStreamTrackAudioStats/[[DeliveredFramesDuration]]}} and
                 {{MediaStreamTrackAudioStats/[[DroppedFramesDuration]]}}.
@@ -776,7 +776,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return {{MediaStreamTrackAudioStats/[[Latency]]}}.
               </p>
             </dd>
@@ -786,7 +786,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return {{MediaStreamTrackAudioStats/[[AverageLatency]]}}.
               </p>
             </dd>
@@ -796,7 +796,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return {{MediaStreamTrackAudioStats/[[MinimumLatency]]}}.
               </p>
             </dd>
@@ -806,7 +806,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return {{MediaStreamTrackAudioStats/[[MaximumLatency]]}}.
               </p>
             </dd>
@@ -816,7 +816,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return
                 {{MediaStreamTrackAudioStats/[[VoiceIsolationEffort]]}}.
               </p>
@@ -827,7 +827,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return
                 {{MediaStreamTrackAudioStats/[[AverageVoiceIsolationEffort]]}}.
               </p>
@@ -838,7 +838,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return
                 {{MediaStreamTrackAudioStats/[[MinimumVoiceIsolationEffort]]}}.
               </p>
@@ -849,7 +849,7 @@ interface MediaStreamTrackAudioStats {
             </dt>
             <dd>
               <p>
-                Upon getting, run the [= expose audio frame counters steps =]
+                Upon getting, run the [= expose audio stats steps =]
                 and return
                 {{MediaStreamTrackAudioStats/[[MaximumVoiceIsolationEffort]]}}.
               </p>
@@ -867,7 +867,7 @@ interface MediaStreamTrackAudioStats {
               <p>When called, run the following steps:</p>
               <ul>
                 <li>
-                  <p>Run the [= expose audio frame counters steps =].</p>
+                  <p>Run the [= expose audio stats steps =].</p>
                 </li>
                 <li>
                   <p>Set {{MediaStreamTrackAudioStats/[[AverageLatency]]}},
@@ -889,7 +889,7 @@ interface MediaStreamTrackAudioStats {
               <p>When called, run the following steps:</p>
               <ul>
                 <li>
-                  <p>Run the [= expose audio frame counters steps =].</p>
+                  <p>Run the [= expose audio stats steps =].</p>
                 </li>
                 <li>
                   <p>Set
